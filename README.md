@@ -3,7 +3,7 @@
 ## Install vim 8+
 ### For Ubuntu you can add Jonathanf repository and install vim
 #### 1. sudo add-apt-repository ppa:johathonf
-#### sudo apt-get install vim
+#### 2. sudo apt-get install vim
 ## Installing configuration for tmux and vim
 #### Copy .tmux.conf.local to your <home> folder
 #### Copy .vimrc to your <home> folder
