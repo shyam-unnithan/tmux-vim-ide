@@ -8,7 +8,7 @@
 #### Copy .tmux.conf.local to your <home> folder
 #### Copy .vimrc to your <home> folder
 #### run vi
-#### `vi .``
+#### `vi .`
 #### Install plugins using vim
 #### `:PlugInstall`
 ## YouCompleteMe
