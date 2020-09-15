@@ -55,6 +55,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 Plug 'junegunn/fzf'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'frazrepo/vim-rainbow'
+
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -595,4 +597,8 @@ inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>
 
 inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
+
+let g:molokai_original = 1
+let g:rehash256 = 1
+let g:rainbow_active = 1
 
