@@ -67,6 +67,12 @@ sudo apt-get -y install  build-essential cmake python3-dev
 # Install powerline fonts
 sudo apt-get -y install fonts-powerline
 
+# Tmux shows powerline arrows only if LC_ALL=en_US.UTF-8
+# Let us add it to .zshrc so that this is set for the shell
+# each and every time
+cat 'export LC_SHELL=en_US.UTF-8' >> ~/.zshrc
+source ~/.zshrc
+
 # Show Message to start vi and then post that install YouCompleteMe
 echo 'Please perform the following'>&2
 echo '1) Run vi command'
