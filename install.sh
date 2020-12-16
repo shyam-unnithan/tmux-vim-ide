@@ -38,7 +38,7 @@ fi
 
 # Install Oh-My-ZSH
 echo 'Message: Installing oh-my-zsh' >&2
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Check if Fuzzy Search is installed else install
 if ! [ -x "$(command -v fzf)" ]; then
@@ -56,7 +56,7 @@ ln -s -f .tmux/.tmux.conf
 
 # Replace the file .tmux.conf.local from gpakosz
 # with the one from our repo
-cp -rf ~/shyam-unnithan/tmux-vim-ide/tmux-conf/.tmux.conf.local ~/.tmux.conf.local
+cp -rf ~/tmux-vim-ide/tmux-conf/.tmux.conf.local ~/.tmux.conf.local
 
 # Copy the .vimrc from our repo
 cp -rf ~/tmux-vim-ide/vimrc/.vimrc ~/
@@ -70,7 +70,7 @@ sudo apt-get -y install fonts-powerline
 # Tmux shows powerline arrows only if LC_ALL=en_US.UTF-8
 # Let us add it to .zshrc so that this is set for the shell
 # each and every time
-cat 'export LC_SHELL=en_US.UTF-8' >> ~/.zshrc
+echo 'export LC_ALL=en_US.UTF-8' >> ~/.zshrc
 source ~/.zshrc
 
 # Show Message to start vi and then post that install YouCompleteMe
